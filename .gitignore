@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Environment / config with secrets
+.env
+.env.local
+config.local.php
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+error_log
+
+# Ionos / hosting artifacts
+.htaccess.bak
+
+# Temp files
+*.tmp
+*.bak

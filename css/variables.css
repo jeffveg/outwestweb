@@ -1,0 +1,135 @@
+/*
+ * =============================================================
+ *  OUT WEST GLOW GOLF — COLOR SCHEME & DESIGN TOKENS
+ *  ─────────────────────────────────────────────────────────────
+ *  TO RETHEME THE ENTIRE SITE: edit ONLY this file.
+ *  Every color, glow, and font in the site references these
+ *  CSS custom properties.
+ *
+ *  CURRENT STATUS: PLACEHOLDER COLORS — NOT FINAL
+ *  Replace the values below once the official palette is chosen.
+ * =============================================================
+ */
+
+:root {
+
+  /* ─────────────────────────────────────────────
+     BACKGROUNDS
+     Dark theme required for blacklight/glow look
+     ───────────────────────────────────────────── */
+  --bg-base:        #07070f;   /* Page background — deepest dark */
+  --bg-surface:     #0e0e1c;   /* Card / section background */
+  --bg-elevated:    #161628;   /* Hover states, dropdowns */
+  --bg-overlay:     rgba(7, 7, 15, 0.88); /* Hero overlays, modals */
+
+  /* ─────────────────────────────────────────────
+     BRAND COLORS — PLACEHOLDER — NOT FINAL
+     Suggested starting point: desert sunset palette
+     Options to explore:
+       • Turquoise + Terracotta (Southwest traditional)
+       • Electric Blue + Warm Gold (premium blacklight)
+       • Neon Green + Deep Purple (classic glow golf)
+     ───────────────────────────────────────────── */
+  --brand-primary:    #e8820c;   /* PLACEHOLDER: warm amber / desert orange */
+  --brand-secondary:  #7c3aed;   /* PLACEHOLDER: deep UV purple */
+  --brand-accent:     #00d4ff;   /* PLACEHOLDER: neon cyan / blacklight glow */
+  --brand-highlight:  #ff4f8b;   /* PLACEHOLDER: hot pink pop accent */
+
+  /* ─────────────────────────────────────────────
+     GLOW / NEON EFFECTS
+     Shadow values for text-shadow and box-shadow
+     ───────────────────────────────────────────── */
+  --glow-primary:   0 0 8px rgba(232, 130, 12, 0.5),
+                    0 0 24px rgba(232, 130, 12, 0.3);
+  --glow-secondary: 0 0 8px rgba(124, 58, 237, 0.5),
+                    0 0 24px rgba(124, 58, 237, 0.3);
+  --glow-accent:    0 0 8px rgba(0, 212, 255, 0.5),
+                    0 0 24px rgba(0, 212, 255, 0.3);
+  --glow-white:     0 0 8px rgba(255, 255, 255, 0.4),
+                    0 0 20px rgba(255, 255, 255, 0.2);
+
+  /* ─────────────────────────────────────────────
+     TEXT
+     ───────────────────────────────────────────── */
+  --text-primary:   #f0f0f8;   /* Main body text */
+  --text-muted:     #8888aa;   /* Secondary / helper text */
+  --text-faint:     #44445a;   /* Dividers, placeholders */
+  --text-inverse:   #07070f;   /* Text on light/colored backgrounds */
+  --text-link:      var(--brand-accent);
+
+  /* ─────────────────────────────────────────────
+     BUTTONS
+     ───────────────────────────────────────────── */
+  --btn-primary-bg:    var(--brand-primary);
+  --btn-primary-text:  var(--text-inverse);
+  --btn-primary-hover: #ff9a20;   /* Lighter on hover */
+
+  --btn-secondary-bg:    transparent;
+  --btn-secondary-border: var(--brand-accent);
+  --btn-secondary-text:   var(--brand-accent);
+  --btn-secondary-hover-bg: rgba(0, 212, 255, 0.12);
+
+  --btn-cta-bg:    var(--brand-accent);
+  --btn-cta-text:  var(--text-inverse);
+  --btn-cta-hover: #33dcff;
+
+  /* ─────────────────────────────────────────────
+     UI ELEMENTS
+     ───────────────────────────────────────────── */
+  --border-subtle:  rgba(255, 255, 255, 0.08);
+  --border-visible: rgba(255, 255, 255, 0.15);
+  --border-accent:  rgba(0, 212, 255, 0.35);
+
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-xl:  32px;
+
+  /* ─────────────────────────────────────────────
+     TYPOGRAPHY
+     ───────────────────────────────────────────── */
+  --font-display: 'Exo 2', 'Arial Black', sans-serif;  /* Headlines */
+  --font-body:    'Nunito', 'Segoe UI', sans-serif;     /* Body text */
+  --font-mono:    'Courier New', monospace;
+
+  --text-xs:   0.75rem;   /*  12px */
+  --text-sm:   0.875rem;  /*  14px */
+  --text-base: 1rem;      /*  16px */
+  --text-lg:   1.125rem;  /*  18px */
+  --text-xl:   1.25rem;   /*  20px */
+  --text-2xl:  1.5rem;    /*  24px */
+  --text-3xl:  1.875rem;  /*  30px */
+  --text-4xl:  2.25rem;   /*  36px */
+  --text-5xl:  3rem;      /*  48px */
+  --text-6xl:  3.75rem;   /*  60px */
+
+  /* ─────────────────────────────────────────────
+     SPACING
+     ───────────────────────────────────────────── */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2rem;
+  --space-xl:  3rem;
+  --space-2xl: 5rem;
+  --space-3xl: 8rem;
+
+  --section-py: var(--space-2xl);  /* Vertical padding for page sections */
+  --max-width:  1200px;
+  --content-width: 780px;
+
+  /* ─────────────────────────────────────────────
+     TRANSITIONS
+     ───────────────────────────────────────────── */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* ─────────────────────────────────────────────
+     NAV
+     ───────────────────────────────────────────── */
+  --nav-height: 70px;
+  --nav-bg:     rgba(7, 7, 15, 0.95);
+  --nav-border: var(--border-subtle);
+
+}
