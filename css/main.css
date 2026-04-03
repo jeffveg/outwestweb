@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav__logo-img {
-  height: 44px;
+  height: 58px;
   width: auto;
 }
 
@@ -380,9 +380,9 @@ h1, h2, h3, h4, h5, h6 {
       rgba(7, 7, 15, 0.85) 100%
     ),
     /* Placeholder gradient — replace with background-image: url('../images/hero.jpg') */
-    radial-gradient(ellipse at 30% 50%, rgba(124, 58, 237, 0.25) 0%, transparent 60%),
-    radial-gradient(ellipse at 70% 30%, rgba(0, 212, 255, 0.15) 0%, transparent 60%),
-    radial-gradient(ellipse at 50% 80%, rgba(232, 130, 12, 0.2) 0%, transparent 60%),
+    radial-gradient(ellipse at 30% 50%, rgba(139, 47, 201, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 30%, rgba(180, 79, 255, 0.2) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 80%, rgba(255, 170, 0, 0.18) 0%, transparent 60%),
     #07070f;
   z-index: 0;
 }

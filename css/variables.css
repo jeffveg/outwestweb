@@ -6,8 +6,12 @@
  *  Every color, glow, and font in the site references these
  *  CSS custom properties.
  *
- *  CURRENT STATUS: PLACEHOLDER COLORS — NOT FINAL
- *  Replace the values below once the official palette is chosen.
+ *  COLOR SCHEME: DECIDED — Purple + Sunset Amber + Course Blue
+ *  Drawn from Barry the Burro mascot art:
+ *    • Purple  = the glow / blacklight color (Barry's outline & bandana)
+ *    • Amber   = warm sunset yellow-orange (Barry's glowing golf ball)
+ *    • Blue    = course / brick accent
+ *    • Black   = background (logo works seamlessly on dark)
  * =============================================================
  */
 
@@ -17,34 +21,33 @@
      BACKGROUNDS
      Dark theme required for blacklight/glow look
      ───────────────────────────────────────────── */
-  --bg-base:        #07070f;   /* Page background — deepest dark */
-  --bg-surface:     #0e0e1c;   /* Card / section background */
-  --bg-elevated:    #161628;   /* Hover states, dropdowns */
-  --bg-overlay:     rgba(7, 7, 15, 0.88); /* Hero overlays, modals */
+  --bg-base:        #07070d;   /* Page background — near black with purple tint */
+  --bg-surface:     #0f0d18;   /* Card / section background */
+  --bg-elevated:    #1a1628;   /* Hover states, dropdowns */
+  --bg-overlay:     rgba(7, 7, 13, 0.88); /* Hero overlays, modals */
 
   /* ─────────────────────────────────────────────
-     BRAND COLORS — PLACEHOLDER — NOT FINAL
-     Suggested starting point: desert sunset palette
-     Options to explore:
-       • Turquoise + Terracotta (Southwest traditional)
-       • Electric Blue + Warm Gold (premium blacklight)
-       • Neon Green + Deep Purple (classic glow golf)
+     BRAND COLORS — FINAL
+     Purple + Sunset Amber palette
      ───────────────────────────────────────────── */
-  --brand-primary:    #e8820c;   /* PLACEHOLDER: warm amber / desert orange */
-  --brand-secondary:  #7c3aed;   /* PLACEHOLDER: deep UV purple */
-  --brand-accent:     #00d4ff;   /* PLACEHOLDER: neon cyan / blacklight glow */
-  --brand-highlight:  #ff4f8b;   /* PLACEHOLDER: hot pink pop accent */
+  --brand-primary:    #FFAA00;   /* Sunset amber — yellow with a hint of orange */
+  --brand-secondary:  #8B2FC9;   /* Deep purple — matching Barry's bandana */
+  --brand-accent:     #B44FFF;   /* Bright UV purple — the GLOW color */
+  --brand-highlight:  #4A9FFF;   /* Course blue — brick/path accent */
 
   /* ─────────────────────────────────────────────
      GLOW / NEON EFFECTS
-     Shadow values for text-shadow and box-shadow
+     Purple is the primary glow (blacklight effect)
+     Amber is the warm secondary glow
      ───────────────────────────────────────────── */
-  --glow-primary:   0 0 8px rgba(232, 130, 12, 0.5),
-                    0 0 24px rgba(232, 130, 12, 0.3);
-  --glow-secondary: 0 0 8px rgba(124, 58, 237, 0.5),
-                    0 0 24px rgba(124, 58, 237, 0.3);
-  --glow-accent:    0 0 8px rgba(0, 212, 255, 0.5),
-                    0 0 24px rgba(0, 212, 255, 0.3);
+  --glow-primary:   0 0 8px rgba(180, 79, 255, 0.6),
+                    0 0 28px rgba(180, 79, 255, 0.35);
+  --glow-secondary: 0 0 8px rgba(255, 170, 0, 0.5),
+                    0 0 24px rgba(255, 170, 0, 0.3);
+  --glow-accent:    0 0 8px rgba(180, 79, 255, 0.6),
+                    0 0 28px rgba(180, 79, 255, 0.35);
+  --glow-blue:      0 0 8px rgba(74, 159, 255, 0.5),
+                    0 0 20px rgba(74, 159, 255, 0.25);
   --glow-white:     0 0 8px rgba(255, 255, 255, 0.4),
                     0 0 20px rgba(255, 255, 255, 0.2);
 
@@ -61,24 +64,24 @@
      BUTTONS
      ───────────────────────────────────────────── */
   --btn-primary-bg:    var(--brand-primary);
-  --btn-primary-text:  var(--text-inverse);
-  --btn-primary-hover: #ff9a20;   /* Lighter on hover */
+  --btn-primary-text:  #07070d;    /* Dark text on amber button */
+  --btn-primary-hover: #ffc233;    /* Brighter amber on hover */
 
   --btn-secondary-bg:    transparent;
   --btn-secondary-border: var(--brand-accent);
   --btn-secondary-text:   var(--brand-accent);
-  --btn-secondary-hover-bg: rgba(0, 212, 255, 0.12);
+  --btn-secondary-hover-bg: rgba(180, 79, 255, 0.12);
 
-  --btn-cta-bg:    var(--brand-accent);
-  --btn-cta-text:  var(--text-inverse);
-  --btn-cta-hover: #33dcff;
+  --btn-cta-bg:    var(--brand-secondary);   /* Deep purple CTA */
+  --btn-cta-text:  #f0f0f8;
+  --btn-cta-hover: #a040e8;                  /* Brighter purple on hover */
 
   /* ─────────────────────────────────────────────
      UI ELEMENTS
      ───────────────────────────────────────────── */
-  --border-subtle:  rgba(255, 255, 255, 0.08);
-  --border-visible: rgba(255, 255, 255, 0.15);
-  --border-accent:  rgba(0, 212, 255, 0.35);
+  --border-subtle:  rgba(180, 79, 255, 0.1);
+  --border-visible: rgba(180, 79, 255, 0.2);
+  --border-accent:  rgba(180, 79, 255, 0.45);
 
   --radius-sm:  6px;
   --radius-md:  12px;
