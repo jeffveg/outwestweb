@@ -1209,6 +1209,77 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ─────────────────────────────────────────────────────────────
+   FOUNDER BIO CARDS
+   ───────────────────────────────────────────────────────────── */
+.founder {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.founder:last-child {
+  margin-bottom: 0;
+}
+
+.founder__photo {
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid var(--border-accent);
+  flex-shrink: 0;
+}
+
+.founder__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.founder__label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brand-primary);
+  margin-bottom: 0.25rem;
+}
+
+.founder__name {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-md);
+}
+
+.founder__bio p {
+  color: var(--text-muted);
+  font-size: var(--text-base);
+  line-height: 1.8;
+  margin-bottom: var(--space-sm);
+}
+
+.founder__bio p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .founder {
+    grid-template-columns: 1fr;
+  }
+  .founder__photo {
+    width: 160px;
+    height: 160px;
+    margin-inline: auto;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
    CONTACT PAGE — two-column layout
    ───────────────────────────────────────────────────────────── */
 .contact-grid {
